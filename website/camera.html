@@ -5,11 +5,15 @@
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
-      <a-entity
+      <!-- <a-entity
           position="0 0 0"
           scale="0.05 0.05 0.05"
           gltf-model="https://reality.droomploeg.nl/img/logo2.gltf"
-        ></a-entity>
+        ></a-entity> -->
+        <a-assets>
+            <a-asset-item id="logo" src="/img/logo2.gltf"></a-asset-item>
+        </a-assets>
+        <a-entity gltf-model="##logo"></a-entity>
       <a-marker-camera type='pattern' patternUrl='https://reality.droomploeg.nl/img/pattern-foribus-logo.patt'></a-marker-camera>
     </a-scene>
   </body>

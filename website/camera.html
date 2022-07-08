@@ -7,11 +7,15 @@
 <body style="margin : 0px; overflow: hidden;">
   <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: true;'>
 
+    <a-marker type='barcode' value='12'>
+      <a-box position='0 0.5 0' color="red"></a-box>
+    </a-marker>
 
-    <a-marker-camera type='pattern' url='https://reality.droomploeg.nl/img/pattern-foribus-logo.patt'>
+    <a-marker type='pattern' url='https://reality.droomploeg.nl/img/pattern-foribus-logo.patt'>
       <a-box position='0 0.5 0' color="yellow"></a-box>
-    </a-marker-camera>
+    </a-marker>
 
+    <a-entity camera></a-entity>
   </a-scene>
 </body>
 

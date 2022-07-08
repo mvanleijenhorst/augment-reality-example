@@ -15,24 +15,23 @@
             scale="0.05 0.05 0.05"
             gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
           ></a-entity>            -->
+    <!--type='pattern' preset='custom' url='https://reality.droomploeg.nl/img/pattern-foribus-logo.patt'>-->
 
-    <a-assets>
+    <!-- <a-assets>
       <a-asset-item id="animated-asset"
         src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf">
       </a-asset-item>
-    </a-assets>
+    </a-assets> -->
 
-    <a-marker type='barcode' value='7'>
+    <!-- <a-marker type='barcode' value='7'>
       <a-entity gltf-model="#animated-asset" scale="1">
       </a-entity>
-    </a-marker>
+    </a-marker> -->
 
-    <a-marker type='barcode' value='12'>
-    <!--type='pattern' preset='custom' url='https://reality.droomploeg.nl/img/pattern-foribus-logo.patt'>-->
+    <a-marker-camera type='barcode' value='12'>
       <a-box position='0 0.5 0' color="yellow"></a-box>
-    </a-marker>
+    </a-marker-camera>
 
-    <a-entity camera><a-entity>
   </a-scene>
 </body>
 

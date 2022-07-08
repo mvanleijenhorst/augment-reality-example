@@ -22,10 +22,12 @@
       </a-asset-item>
     </a-assets>
 
-    <a-entity gltf-model="#animated-asset" scale="2">
-    </a-entity>
-    <a-marker-camera type='pattern' patternUrl='https://reality.droomploeg.nl/img/pattern-foribus-logo.patt'>
-    </a-marker-camera>
+    <a-marker id="animated-marker" type='pattern' preset='custom'
+      url='https://reality.droomploeg.nl/img/pattern-foribus-logo.patt'>
+      <a-entity gltf-model="#animated-asset" scale="1">
+      </a-entity>
+    </a-marker>
+    <a-marker camera>a-marker>
   </a-scene>
 </body>
 
